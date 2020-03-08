@@ -26,11 +26,11 @@ column1 = dbc.Col(
         dcc.Dropdown(
             id = 'Sex',
             options = [
-                {'label': 'Male', 'value': 1},
-                {'label': 'Female', 'value': 2},
+                {'label': 'Male', 'value': 'Male'},
+                {'label': 'Female', 'value': 'Female'},
             ],
             className = 'mb-5',
-            value = 1,
+            value = 'Male',
             placeholder='Select a gender'
             
     ),
@@ -93,11 +93,11 @@ column1 = dbc.Col(
          dcc.Dropdown(
             id = 'Season',
             options = [
-                {'label': 'Summer', 'value': 1},
-                {'label': 'Winter', 'value': 2},
+                {'label': 'Winter', 'value': 'Winter'},
+                {'label': 'Summer', 'value': 'Summer'},
             ],
             className = 'mb-5',
-            value = 1,
+            value = 'Summer',
             placeholder='Select a season'
         
 
@@ -167,8 +167,8 @@ def update_output_div(input_value):
 
 
 def predict(gender,age,height,weight,year,season):
-    Height_in = height/2.54
-    Weight_lb = weight*2.2
+    Height_in = height*2.54
+    Weight_lb = weight/2.2
     df = pd.DataFrame(
         columns=['Sex', 'Age', 'Height', 'Weight','Year','Season'], 
         data=[[gender,age,Height_in,Weight_lb,year,season]]
