@@ -22,7 +22,7 @@ column1 = dbc.Col(
             my coach at the time, said I was 9th.  Out of that 8, 2 were then picked to go.  It is all very political.  I did my best and although
             wasn't even allowed to go, I absolutly loved the process.
 
-            The data set I used is from kaggle.com and was 120 years of Olympic History: altheles and results. Here is the first five rows and the shape
+            The data set I used is from kaggle.com and was 120 years of Olympic History: athletes and results. Here are the first five rows and the shape
             of the data frame. 
             
             """
@@ -35,12 +35,13 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
             # Some fun facts
-            As I was doing some data exploration, here are some some facts I learned.
+            As I was doing some data exploration, here are some facts I learned.
 
-            1.  Summer 1896 was the first ever Olympics.  
+            1.  Summer 1896 was the first-ever Olympics.  Although the ancient Games were staged in Olympia, Greece, 
+                from 776 BC through 393 AD, it took 1503 years for the Olympics to return.  
             2.  Winter Olympics didn't come about until 1928, 32 years later. 
-            3.  Both Summer and Winter were held in the same year until it 1992.
-            4.  1916, 1940 and 1944 were canceled.  (After doing some reseach it was durning wars. WWI and WWII)
+            3.  Both Summer and Winter were held in the same year until 1992.
+            4.  1916, 1940 and 1944 were canceled.  After doing some research it was during wars. WWI and WWII.
             
             """ 
         ),
@@ -51,9 +52,9 @@ column1 = dbc.Col(
         ),
         dcc.Markdown(
             """
-            5. Art competitions used to be part of the Olympics?!  What?!  That is crazy.  I ended up dropping this, 
-            as most didn't have much information, but that is cool to know.
-            6. Over the 120 years, only 35 of those were olympic years. 
+            5. . Art competitions used to be part of the Olympics? That is crazy. This is cool to know. I actually ended up dropping this 'Sport', 
+            as most didn't have much information
+            6. Over the 120 years, only 35 of those were Olympic years. 
             7. Although the Olympics have been around for 120 years, because they only happen every 2-4 years, there has only been 51 games total.
              
             """
