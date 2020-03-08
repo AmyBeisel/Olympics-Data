@@ -9,6 +9,8 @@ import plotly.express as px
 # Imports from this application
 from app import app
 
+
+
 # 2 column layout. 1st column width = 4/12
 # https://dash-bootstrap-components.opensource.faculty.ai/l/components/layout
 column1 = dbc.Col(
@@ -16,29 +18,27 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## What sport would you medal in the Olympics?
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            What if you wanted to compete in the olympics?
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            You can use this app and enter your gender, age, weight and height, to see 
+            what sport you would do best in, compared to real olympians stats. 
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
-
+            This is soley for educational purposes, as most do not train day in and day out,
+            but fun to see!!
+           
+           
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Predict Your Sport!', color='primary'), href='/predictions')
     ],
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
-
-column2 = dbc.Col(
-    [
-        dcc.Graph(figure=fig),
-    ]
+column2 = dbc.Col([html.Img(src = 'assets/olympic_rings.jpg', className = 'Olympic Rings')
+],
+align = 'center'
 )
 
 layout = dbc.Row([column1, column2])
