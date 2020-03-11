@@ -17,12 +17,13 @@ column1 = dbc.Col(
         
             ## Olympics Data
 
-            I've always enjoyed watching the olympics.  As an athlete myself, I tried going in 2016 for the mountain biking event.  Chasing UCI 
-            points like my life depended on it.  I fell short and was not put on the long list. Out of the 8 that were allowed, according to 
-            my coach at the time, said I was 9th.  Out of that 8, 2 were then picked to go.  It is all very political.  I did my best and although
-            wasn't even allowed to go, I absolutly loved the process.
+            I've always enjoyed watching the olympics and as a professional athlete myself, I trained specifically for the 2016 Olympics for the Cross Country mountain biking event. 
+            I chased UCI points by attending World Cup races like my life depended on it. The first step in a long and frequently contentious selection process is making the Olympic long list. 
+            Eight women are chosen for the long list....and I was 9th on that list. I did my best, fell short, and wasn't allowed to go.  I also have a personal passion for hearing the background 
+            of athletes’ lives and love watching the games themselves.
 
-            The data set I used is from kaggle.com and was 120 years of Olympic History: athletes and results. Here are the first five rows and the shape
+            The data set I used is from Kaggle.com:[120 years of Olympic history: athletes and results](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results). 
+            Here are the first five rows and the shape
             of the data frame. 
             
             """
