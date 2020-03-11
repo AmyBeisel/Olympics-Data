@@ -15,8 +15,7 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
             Colorado Springs is not only my home but also home to the Olympic and Paralympic Committee Headquarters. In the latest build week in my Data Science program, 
-            I chose to work with Olympic data for our machine learning project. As a professional athlete myself, Colorado Springs is perfect for training. I also have a 
-            personal passion for hearing the background of athletes' lives and love watching the games themselves.
+            I chose to work with Olympic data for our machine learning project. 
             
             ## Process
 
@@ -24,8 +23,9 @@ column1 = dbc.Col(
             going to try and predict which counties would have the most medals in 2020, but with where I am in my ability and talking to experts, this would have been
             fairly difficult.  Therefore, I decided to predict which sport one would most likely medal in based on their own stats.  
 
-            I went down a few rabbit holes with some feature engineering, that in the end I ended up not even using.  After cleaning up the data, mainly reducing my Sport features cardinality to 40 from 65, and getting the features I needed, I 
-            was ready to split my data. I used a 3 way split into train, val and test.  Here is an example of my target 'Sport' based on one feature 'Age'. 
+            I went down a few rabbit holes with some feature engineering, that in the end I ended up not even using.  After cleaning up the data, mainly reducing my 'Sport' 
+            features cardinality (cardinality refers to the uniqueness of data values contained in a column) to 40 from 65 and getting the columns I needed, I 
+            was ready to split my data. I used a 3 way split - train, val and test.  Here is an example of my target 'Sport' based on one feature 'Age'. 
 
             """
             ),
@@ -40,7 +40,7 @@ column1 = dbc.Col(
             ## Machine Learning
 
             I did a logistic model as my majority base classifier since this is a multi-classification problem. My training accuracy was only 17%.  This means that 
-            without doing any machine learning on my model, it would only guess correctly 17% of the time.  For my machine learning models, I tired both Random Forest Classifer
+            without doing any machine learning on my model, it would only guess correctly 17% of the time.  For my machine learning models, I tried both Random Forest Classifer
             and an XGboost model.  I ended up using the Random Forest for my final pipeline as it produced slightly better results.  
             ```
             {
@@ -74,7 +74,7 @@ column1 = dbc.Col(
              ),
         dcc.Markdown(
             """
-            Gradient Boosting, which is used for xgboost.  Below is the graph, though it is slightly less interruptible than the 
+            Gradient Boosting is used for xgboost.  Below is the graph, though it is slightly less interruptible than the 
             bagging of random forest above.
 
 
@@ -107,7 +107,7 @@ column1 = dbc.Col(
             ),
     dcc.Markdown(
             """
-            * An Ice Hockey Player
+            * An Ice Hockey Player -
             
             """
     
@@ -122,6 +122,13 @@ column1 = dbc.Col(
             But for the Ice Hockey player, only height helped. And the season, year, age and weight lowered it. 
             """    
     ),
+     dcc.Markdown(
+            """
+            Here is my full [Github notebook](https://github.com/AmyBeisel/Olympics-Data/blob/master/notebooks/LS_DS_231_assignment_AMY_BEISEL.ipynb), 
+            if you want to dig deeper. Thank you! 
+            """
+
+     ),    
     ],
 )
 
